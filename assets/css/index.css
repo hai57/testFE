@@ -6,12 +6,16 @@ body {
   font-family: "Lexend", sans-serif !important;
 }
 
+ul {
+  text-decoration: none;
+  list-style: none;
+}
 
 /* homepage */
-.homepage {
+.page {
   margin: 0 auto;
   width: 1420px;
-  height: 720px;
+  height: 910px;
 }
 
 .header {
@@ -73,8 +77,6 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  text-decoration: none;
-  list-style: none;
   gap: 10px;
 }
 
@@ -92,13 +94,26 @@ body {
 .navbar ul li:hover {
   border: 1px solid #4453d4;
   color: #4453d4;
+  transition: 0.4s ease;
 }
 
-.dropdown {
+.navbar ul li button {
+  border: none;
   display: flex;
   align-items: center;
-  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17.5px;
+  color: #fff;
+  border-radius: 32px;
+  cursor: pointer;
+  background-color: transparent;
 }
+
+.navbar ul li button:hover {
+  color: #4453d4;
+}
+
 
 .navbar .btn-signup {
   width: 107px;
@@ -112,7 +127,7 @@ body {
   background-color: #D1FAE5;
 }
 
-.container {
+.container-context {
   display: flex;
   position: relative;
 }
@@ -121,6 +136,8 @@ body {
   margin-top: 100px;
   margin-right: 50px;
 }
+
+
 
 .context h1 {
   width: 370px;
@@ -208,6 +225,40 @@ body {
   border-radius: 50%;
 }
 
+.line-red {
+  position: absolute;
+  top: 128px;
+  left: 105px;
+  width: 67.95px;
+  height: 91.5px;
+  border-top: 4px solid #EF4444;
+  border-left: 4px solid #EF4444;
+}
+
+.line-orange {
+  position: absolute;
+  top: 190px;
+  right: 208px;
+  width: 40.36px;
+  height: 97px;
+  border-top: 4px solid #F59E0B;
+  border-right: 4px solid #F59E0B;
+}
+
+.line-blue {
+  position: absolute;
+  top: 365px;
+  right: 198px;
+  width: 43.43px;
+  height: 75px;
+  border-top: 4px solid #3B82F6;
+  border-right: 4px solid #3B82F6;
+}
+
+.carousel-inner {
+  z-index: 0;
+}
+
 .carousel-item {
   border-radius: 0px 0px 0px 80px;
   overflow: hidden;
@@ -238,7 +289,7 @@ body {
 
 .carousel-control-next {
   position: absolute !important;
-  right: -200px !important;
+  right: 70px !important;
 }
 
 .carousel {
@@ -324,4 +375,269 @@ body {
   width: 56px;
   height: 56px;
   border-radius: 24px;
+}
+
+/* page recommend */
+.recomendationpage {
+  padding: 100px 105px;
+}
+
+.featured-house {
+  display: flex;
+  justify-content: space-between;
+}
+
+.group {
+  position: relative;
+}
+
+.line {
+  position: absolute;
+  top: 8%;
+  left: -40px;
+  width: 32px;
+  height: 1px;
+  background-color: #F59E0B;
+}
+
+.featured-house h4 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17.5px;
+  color: #F59E0B;
+}
+
+.featured-house h1 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.navbar-houses {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-houses ul {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 32px;
+}
+
+
+.navbar-houses ul li .btn-houses {
+  border: 1px solid #E0E3EB;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  padding: 12px 24px 12px 24px;
+  background-color: transparent;
+}
+
+.navbar-houses ul li .btn-houses .material-icons {
+  margin-right: 10px;
+}
+
+.navbar-houses ul li .btn-houses:hover,
+.navbar-houses ul li .btn-houses:hover span {
+  border: none;
+  color: #10B981;
+  background-color: #D1FAE5;
+}
+
+.navbar-houses ul li button span {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #888B97;
+}
+
+.navbar-houses ul li .active {
+  border: none;
+  background-color: #D1FAE5;
+}
+
+.navbar-houses ul li .active>span {
+  color: #10B981;
+}
+
+.btn-container {
+  width: 136px;
+  height: 52px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.btn-container button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 52px;
+  border-radius: 32px;
+  border: none;
+}
+
+.btn-container button:hover {
+  color: #fff;
+  background-color: #10B981;
+}
+
+.btn-container .active {
+  color: #fff;
+  background-color: #10B981;
+}
+
+.recomend-houses ul {
+  width: 1100px;
+  height: 552px;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.recomend-houses ul li {
+  width: 340px;
+  height: 552px;
+  padding: 8px 16px 8px 16px;
+}
+
+.recomend-houses ul li .img-container img {
+  width: 340px;
+  height: 382px;
+  border-radius: 24px;
+}
+
+.img-container {
+  position: relative;
+}
+
+.tag {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 16px;
+  left: 16px;
+  padding: 8px 16px 8px 16px;
+  height: 34px;
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.tag span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17.5px;
+}
+
+.tag .material-icons {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.red {
+  background-color: #FEE2E2;
+}
+
+.red span {
+  color: #EF4444;
+}
+
+.blue {
+  background-color: #DBEAFE;
+}
+
+.blue span {
+  color: #1D4ED8;
+}
+
+.green {
+  background-color: #D1FAE5;
+}
+
+.blue span {
+  color: #047857;
+}
+
+.price-house {
+  margin: 24px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.price-house h1 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.price-house h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.owner {
+  display: flex;
+}
+
+.owner img {
+  margin-right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.owner h1 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.owner h4 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #888B97;
+}
+
+.loader {
+  position: absolute;
+  top: 30px;
+  width: 50px;
+  aspect-ratio: 1;
+  background: #006cff;
+  border-radius: 50%;
+  animation: l1 3s infinite linear;
+}
+
+@keyframes l1 {
+  12.5% {
+    border-radius: 37% 63% 70% 30% / 30% 62% 38% 70%
+  }
+
+  25% {
+    border-radius: 50% 50% 70% 30% / 52% 62% 38% 48%
+  }
+
+  37.5% {
+    border-radius: 33% 67% 18% 82% / 52% 75% 25% 48%
+  }
+
+  50% {
+    border-radius: 73% 27% 18% 82% / 52% 32% 68% 48%
+  }
+
+  62.5% {
+    border-radius: 73% 27% 74% 26% / 64% 32% 68% 36%
+  }
+
+  75% {
+    border-radius: 84% 16% 15% 85% / 55% 79% 21% 45%
+  }
+
+  87.5% {
+    border-radius: 12% 88% 69% 31% / 10% 66% 34% 90%
+  }
 }
