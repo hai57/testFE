@@ -509,7 +509,7 @@ ul {
   border-radius: 24px;
 }
 
-.img-container {
+.recomend-houses ul li .img-container {
   position: relative;
 }
 
@@ -602,14 +602,253 @@ ul {
   color: #888B97;
 }
 
+/* sell house */
+.sell-page {
+  padding: 100px 105px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sell-house {
+  width: 522px;
+  height: 404px;
+}
+
+.sell-house h4 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17.5px;
+  color: #F59E0B;
+}
+
+.sell-house h1 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.sell-house h3 {
+  width: 420px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #626687;
+}
+
+.house-container {
+  width: 600px;
+}
+
+.sell-house .line {
+  top: 7%;
+}
+
+.house-detail {
+  width: 440px;
+  height: 124px;
+}
+
+.house-detail h3 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: #1B1C57;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex .room {
+  display: flex;
+  align-items: center;
+  width: 193.5px;
+  height: 32px;
+}
+
+.flex .room .material-icons {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+  color: #888B97;
+}
+
+.sell-house .line-gray {
+  margin: 32px auto;
+  width: 440px;
+  height: 2px;
+  background-color: #F0F3FD;
+}
+
+.sell-house .contact {
+  display: flex;
+  width: 440px;
+  height: 56px;
+}
+
+.sell-house .contact .position {
+  width: 218px;
+}
+
+.sell-house .contact img {
+  margin-right: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+.sell-house .contact h2 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.sell-house .contact h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #888B97;
+}
+
+.sell-house .contact button {
+  height: 48px;
+  display: flex;
+  padding: 12px 16px 12px 16px;
+  gap: 16px;
+  border: none;
+  border-radius: 32px;
+  color: #fff;
+  background-color: #10B981;
+}
+
+.sell-house .contact .txt-contact {
+  width: 91px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.sell-page .img-container {
+  position: relative;
+  width: 488px;
+  height: 416px;
+}
+
+.sell-page .img-container .house-img {
+  width: 488px;
+  height: 416px;
+  border-radius: 4px;
+  z-index: 0;
+}
+
+.sell-page .img-container .decorate-container .cough-img {
+  position: absolute;
+  bottom: -43px;
+  left: -40px;
+  width: 296px;
+  height: 168px;
+  border-radius: 4px;
+}
+
+.sell-page .img-container .decorate-container .decorate-img {
+  position: absolute;
+  bottom: -43px;
+  left: 268px;
+  width: 96px;
+  height: 80px;
+  border-radius: 4px;
+}
+
+.sell-page .img-container .decorate-container .chair-img {
+  position: absolute;
+  bottom: -43px;
+  left: 372px;
+  width: 96px;
+  height: 80px;
+  border-radius: 4px;
+}
+
+.sell-page .img-container button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sell-page .img-container button span {
+  color: #fff;
+}
+
+/* tip-trick */
+.tip-page {
+  padding: 100px 105px;
+}
+
+.tip-trick .group {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tip-trick .group .line {
+  position: absolute;
+  top: -14px;
+  left: 48.5%;
+}
+
+.tip-trick .group h4 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17.5px;
+  color: #F59E0B;
+  text-transform: capitalize;
+}
+
+.tip-trick .group h1 {
+  padding: 0 380px;
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 40px;
+  text-transform: capitalize;
+}
+
+.tip-trick .group button {
+  width: 118px;
+  padding: 12px 16px 12px 16px;
+  border-radius: 32px;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #fff;
+  background-color: #10B981;
+  gap: 16px;
+}
+
 .loader {
   position: absolute;
-  top: 30px;
-  width: 50px;
+  top: 30%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  width: 438px;
+  height: 494px;
   aspect-ratio: 1;
-  background: #006cff;
+  background-color: #FFFA82;
   border-radius: 50%;
   animation: l1 3s infinite linear;
+  filter: blur(150px);
+  z-index: -1;
 }
 
 @keyframes l1 {
